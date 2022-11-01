@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { applyMiddleware, combineReducers, legacy_createStore } from 'redux';
-import logger from 'react-logger';
+import logger from 'redux-logger';
 import { Provider } from 'react-redux';
 
 const storage = legacy_createStore(
